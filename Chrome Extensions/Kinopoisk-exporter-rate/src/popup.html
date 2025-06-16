@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kinopoisk Exporter</title>
+    <link rel="stylesheet" href="css/popup.css">
+</head>
+<body>
+    <main id="stub" style="display: none">
+        To use this extension you have to go to <b>www.kinopoisk.ru</b> first.
+    </main>
+    <main id="content" style="display: none">
+        <section id="show_user_id_row">
+            <div class="control-checkbox">
+                <input type="checkbox" name="show_user_id" id="show_user_id" />
+                <label for="show_user_id">I am not logged in</label>
+                <span
+                    class="icon-emoji"
+                    title="Select this option if you'd like to download ratings history for someone else."
+                >
+                    i
+                </span>
+            </div>
+        </section>
+
+        <div id="user_id_row" style="display: none;">
+            <section>
+                <label class="info" for="user_id">
+                    You can find an ID in the URL of the user's home page, e.g. "1234567" here:
+                    <div class="separator">&nbsp;</div>
+                    https://www.kinopoisk.ru/user/1234567/votes/
+                </label>
+            </section>
+            <section>
+                <input type="text" name="user_id" id="user_id" placeholder="User ID (1234567)" />
+            </section>
+        </div>
+
+        <section>
+            <button id="download-votes">Export votes</button>
+            <button id="download-votes-loading" style="display: none;" disabled>Exporting...</button>
+        </section>
+
+        <section id="error" style="display: none;"></section>
+    </main>
+<script src="js/popup.js"></script>
+</body>
+</html>

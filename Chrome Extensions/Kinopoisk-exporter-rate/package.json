@@ -1,0 +1,7 @@
+{
+  "name": "kpoisk-rating-downloader",
+  "version": "1.0.0",
+  "main": "src/js/popup.js",
+  "author": "Max Zaytsev <zaytsev.mxm@gmail.com>",
+  "license": "MIT"
+}

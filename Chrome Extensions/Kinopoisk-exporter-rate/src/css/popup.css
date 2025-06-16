@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 16px;
+    background: #fff;
+    min-width: 300px;
+}
+
+section {
+    margin: 0 0 8px;
+}
+
+input, button {
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: 0;
+    outline: 0;
+}
+
+input:hover, button:hover {
+    background: #0b5ed7;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    box-shadow: 0 0 0 0.25rem rgb(49 132 253 / 50%);
+}
+
+input:disabled, button:disabled {
+    opacity: 0.65;
+    cursor: default;
+}
+
+input[type="text"] {
+    border: 1px  solid #ddd;
+    padding: 0 8px;
+}
+
+input[type="text"]:hover {
+    background: none;
+}
+
+input[type="text"]:focus {
+    border-color: #0b5ed7;
+}
+
+input[type="checkbox"] {
+    width: 1.2em;
+    height: 1.2em;
+}
+
+input[type="checkbox"]:hover {
+    background: none;
+}
+
+.control-checkbox {
+    display: flex;
+    align-items: center;
+    font: 15px/20px Arial, sans-serif;
+}
+
+.control-checkbox label {
+    margin-left: 6px;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background: #0d6efd;
+    color: #fff;
+    font: 15px/40px Arial, sans-serif;
+}
+
+.icon-emoji {
+    margin: 4px;
+    cursor: help;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: #0d6efd;
+    border: 1px solid #0b5ed7;
+    color: #fff;
+    border-radius: 50%;
+    font: bold 12px/12px Arial, sans-serif;
+    text-align: center;
+}
+
+.info {
+    display: block;
+    padding: 8px;
+    font: 12px/15px Arial, sans-serif;
+    border: 1px dotted #0d6efd;
+    margin-bottom: 10px;
+    background: #EAF2FF;
+    border-radius: 8px;
+}
+
+.separator {
+    height: 4px;
+}
+
+#error {
+    padding: 5px;
+    color: red;
+}

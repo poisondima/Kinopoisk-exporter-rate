@@ -1,0 +1,28 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "/src/images/icon128.png",
+         "16": "/src/images/icon16.png",
+         "32": "/src/images/icon32.png",
+         "48": "/src/images/icon48.png"
+      },
+      "default_popup": "/src/popup.html"
+   },
+   "background": {
+      "service_worker": "/src/js/background.js"
+   },
+   "description": "Creates a *.csv file with the votes you gave to movies on Kinopoisk",
+   "host_permissions": [ "https://*.kinopoisk.ru/*" ],
+   "icons": {
+      "128": "/src/images/icon128.png",
+      "16": "/src/images/icon16.png",
+      "32": "/src/images/icon32.png",
+      "48": "/src/images/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAigFF7a5akjqEB549C01Zr6X+UKXyMuiXMkunY/x44BaM2BP5LqFiwlPwmBALxaZZI4il/61iuSHDX3BeNdiEgswKXWQ6Zkjq3G1fJ/rFtJsfGzrkaaUFt0yuINxFgvAStx2MEsrWaMZa2gmco50zIl7mYuMn0mZfYRMIWBzBzxz4yFPJO7gU2Gkm++WvGSFljImuchdxEN7kcV/LVKCL/o26Irz73Cko+oZwz6KwRbOT9nFNetOG+0tFNtfbPd5uBaeSRhKv955JdQulJWBEv3xfQ8AOY420ikqteD5jXtBN+LZG+GHg9NZD4nvfEZ6LI+2Y7ivdr2d3BXRtNnWqcwIDAQAB",
+   "manifest_version": 3,
+   "name": "Kinopoisk Exporter",
+   "permissions": [ "scripting" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.0.5"
+}
